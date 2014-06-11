@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>xyzabc-ng</title>
+    <link href="app.css" rel="stylesheet">
+  </head>
+  <body ng-app="xyzabc-ng">
+    
+    <brand-header></brand-header>
+    
+    <div class="container">
+      <side-nav></side-nav>
+      <main role="main">
+      <div class="content" ng-view>
+      </div>
+      </main>
+      
+    </div>
+    <footer>
+      <h1 class="copyright">Copyright &copy; XYZABC Software 2014</h1>
+    </footer>
+    
+    <script src="lib.js"></script>
+    <script src="templates.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

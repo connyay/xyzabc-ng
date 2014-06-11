@@ -1,0 +1,40 @@
+@columns: 12;
+@column-width: 60;
+@gutter-width: 0;
+
+@total-width: 100%;
+
+.brand {
+	margin-bottom: 1em;
+}
+
+main {
+	.column(9);
+	.content {
+		max-height: 515px;
+		overflow-y: auto;
+	}
+}
+.main-nav {
+	.column(3);
+}
+
+main,
+.main-nav,
+.container {
+	min-height: 515px;
+}
+
+@media screen and (max-width: 500px) {
+	main,
+	.main-nav {
+		.column(12);
+		margin-bottom: 1em;
+		min-height: initial;
+		max-height: initial;
+		overflow-y: auto;
+	}
+	main .content {
+		max-height: initial;
+	}
+}

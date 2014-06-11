@@ -1,0 +1,10 @@
+<div class="news">
+	<article ng-repeat="item in news | limitTo:limit">
+		<p><a href title="{{item.headline}}">{{item.headline}}</a> &ndash; {{item.body}}</p>
+	</article>
+
+	<div ng-hide="limit === 99999">
+		<div ng-show="news.length > limit" class="ng-hide"><a href ng-click="showMore()">More...</a></div>
+		<div ng-show="limit && news.length && news.length <= limit" class="ng-hide"><a href ng-click="showLess()">Less...</a></div>
+	</div>
+</div>

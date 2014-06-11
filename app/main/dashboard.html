@@ -1,0 +1,19 @@
+<h1 class="bold">Dashboard</h1>
+
+<section class="expanded">
+	<heading title="Latest News" ng-click="toggleSection($event)">Latest News</heading>
+	<div class="news content">
+
+		<news-list news="news" limit="limit"></news-list>
+
+	</div>
+</section>
+
+<section class="collapsed">
+	<heading "Product Sales" ng-click="toggleSection($event)">Product Sales</heading>
+	<div class="sales content">
+
+		<sales-table sales="sales" keys="keys"></sales-table>
+
+	</div>
+</section>

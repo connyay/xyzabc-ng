@@ -1,0 +1,8 @@
+<table class="sales">
+	<tr>
+		<th ng-repeat="key in keys">{{key}}</th>
+	</tr>
+	<tr ng-repeat="sale in sales">
+		<td ng-repeat="key in keys">{{sale[key]}}</td>
+	</tr>
+</table>

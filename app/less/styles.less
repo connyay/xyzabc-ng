@@ -1,0 +1,142 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+	background-color: #333;
+	min-width: 500px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	background-color: #FFF;
+	> .content {
+		padding: 10px;
+	}
+	a {
+		color: #21671E;
+	}
+	a:hover {
+		color: #BDE9BE;
+	}
+	section {
+		padding-bottom: 10px;
+	}
+	section > heading {
+		position: relative;
+		top: 8px;
+		left: 30px;
+		display: inline-block;
+		background: #FFF;
+		padding: 0 20px 0 15px;
+		.bold;
+	}
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.main-nav {
+	background-color: #666;
+	li.active {
+		.gradient;
+	}
+	a {
+		.bold;
+		color: #FFF;
+		display: table-cell;
+		height: 40px;
+		vertical-align: middle;
+		padding-left: 15px;
+	}
+}
+
+.brand {
+	background-color: #000;
+	color: #FFF;
+	padding: .6em;
+	img,
+	nav li {
+		display: inline-block;
+	}
+	nav {
+		float: right;
+		padding-top: .3em;
+		padding-right: 15px;
+	}
+	nav a {
+		color: #FFF;
+		font-size: 11px;
+		.bold;
+	}
+}
+section {
+	> .sales,
+	> .news {
+		.radius(7px;);
+		border: 1px #BBB solid;
+		padding: 15px;
+	}
+}
+.sales,
+.news {
+	font-size: 13px;
+	article {
+		padding-bottom: 15px;
+	}
+}
+
+table.sales {
+	border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+	th {
+		background-color: #BDE9BE;
+		text-align: left;
+	}
+	td, th {
+	    margin: 0;
+	    overflow: visible;
+	    padding: 0.4em 1em;
+	}
+	td:first-child,
+	th:first-child {
+	    border-left-width: 0;
+	}
+	td {
+	    background-color: transparent;
+	    text-align: right;
+	}
+	td:first-child {
+	    text-align: left;
+	}
+	tr:nth-child(2n-1) td {
+	    background-color: #E3F6E2;
+	}
+}
+
+.copyright {
+	color: #FFF;
+	padding: 10px;
+	font-size: 11px;
+}
+
+.collapsed heading,
+.expanded heading {
+	cursor: pointer;
+}
+
+.expanded heading:before {
+	content: "\2013";;
+	padding-right: 10px;
+}
+.collapsed {
+	.content {
+		display: none;
+	}
+	heading:before {
+		content: "+";
+		padding-right: 10px;
+	}
+}
