@@ -167,20 +167,17 @@
             $scope.toggleSection = function($event) {
                 var sectionElem = ($event.srcElement) ? $event.srcElement.parentElement : $event.target.parentElement;
                 var remove = 'expanded',
-                    add = 'collapsed';
-                if ((sectionElem.classList && sectionElem.classList.contains('collapsed')) ||
-                    sectionElem.className.indexOf('collapsed') !== -1) {
+                    add = 'collapsed',
+                    $sectionElem = angular.element(sectionElem);
+
+                if ($sectionElem.hasClass('collapsed')) {
                     // Swap 'em
                     var swap = add;
                     add = remove;
                     remove = swap;
                 }
-                if (sectionElem.classList) {
-                    sectionElem.classList.remove(remove);
-                    sectionElem.classList.add(add);
-                } else {
-                    sectionElem.className = sectionElem.className.replace(remove, add);
-                }
+                $sectionElem.removeClass(remove);
+                $sectionElem.addClass(add);
             };
             $scope.showMore = function() {
                 // Set the limit to the amount of stories
