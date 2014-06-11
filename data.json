@@ -1,0 +1,64 @@
+{
+    "news": [{
+        "headline": "Lorem ipsum dolor sit amet",
+        "body": "consectetur adipiscing elit. Integer sit amet tellus quis lorem sagittis sagittis. Vestibulum auctor quam nec est euismod, at aliquet metus vehicula. Donec molestie posuere gravida."
+    }, {
+        "headline": "Suspendisse elementum cursus purus",
+        "body": "condimentum vehicula. Integer tempor lorem non ligula placerat ornare. Donec placerat pretium ante, vitae aliquet velit."
+    }, {
+        "headline": "Morbi quis aliquam ipsum, nec rhoncus lacus",
+        "body": "Vestibulum pharetra blandit dolor, quis adipiscing justo interdum vitae. Vivamus rutrum tincidunt magna pellentesque sodales. Etiam bibendum eget enim vitae sagittis. Aliquam scelerisque libero a diam aliquam mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo erat, faucibus non vestibulum id, mattis eget massa. Mauris orci sapien, interdum at mi eget, fermentum placerat quam."
+    }, {
+        "headline": "Integer viverra lacinia augue",
+        "body": "Cras consequat lacus nibh, et tempor arcu varius ut. Nulla semper arcu in tellus dignissim mollis. Phasellus ac dolor viverra, fermentum lacus sed, interdum quam. Duis suscipit eros non dignissim volutpat. Mauris vel diam eu leo pulvinar tempus."
+    }],
+    "sales": [{
+        "Product": "LED Warm Light Bulb",
+        "Month-to-Date Sales": 3501,
+        "Month-to-Date Revenue": "$5218",
+        "Year-to-Date Sales": 9001,
+        "Year-to-Date Revenue": "$1530"
+    }, {
+        "Product": "LED Daylight Light Bulb",
+        "Month-to-Date Sales": 1624,
+        "Month-to-Date Revenue": "$2201",
+        "Year-to-Date Sales": 2046,
+        "Year-to-Date Revenue": "$3105"
+    }, {
+        "Product": "EZ Energy Meter",
+        "Month-to-Date Sales": 52,
+        "Month-to-Date Revenue": "$945",
+        "Year-to-Date Sales": 240,
+        "Year-to-Date Revenue": "$3890"
+    }, {
+        "Product": "Smart Power Strip",
+        "Month-to-Date Sales": 72,
+        "Month-to-Date Revenue": "$697",
+        "Year-to-Date Sales": 198,
+        "Year-to-Date Revenue": "$1549"
+    }, {
+        "Product": "Solar Attic Fan",
+        "Month-to-Date Sales": 6,
+        "Month-to-Date Revenue": "$1201",
+        "Year-to-Date Sales": 9,
+        "Year-to-Date Revenue": "$1803"
+    }, {
+        "Product": "Programmable Thermostat",
+        "Month-to-Date Sales": 80,
+        "Month-to-Date Revenue": "$795",
+        "Year-to-Date Sales": 109,
+        "Year-to-Date Revenue": "$998"
+    }, {
+        "Product": "Foam Sealant",
+        "Month-to-Date Sales": 108,
+        "Month-to-Date Revenue": "$364",
+        "Year-to-Date Sales": 331,
+        "Year-to-Date Revenue": "$991"
+    }, {
+        "Product": "Electric Timer",
+        "Month-to-Date Sales": 20,
+        "Month-to-Date Revenue": "$315",
+        "Year-to-Date Sales": 35,
+        "Year-to-Date Revenue": "$552"
+    }]
+}

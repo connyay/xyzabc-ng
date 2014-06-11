@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.gradient {
+  background: -moz-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(124, 124, 124, 0.7)), color-stop(50%, rgba(196, 196, 196, 0.5)), color-stop(100%, rgba(124, 124, 124, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b37c7c7c', endColorstr='#b37c7c7c', GradientType=0);
+}
+.bold {
+  font-weight: bold;
+}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+.brand {
+  margin-bottom: 1em;
+}
+main {
+  display: inline;
+  float: left;
+  width: 75%;
+  margin: 0 0%;
+}
+main .content {
+  max-height: 515px;
+  overflow-y: auto;
+}
+.main-nav {
+  display: inline;
+  float: left;
+  width: 25%;
+  margin: 0 0%;
+}
+main,
+.main-nav,
+.container {
+  min-height: 515px;
+}
+@media screen and (max-width: 500px) {
+  main,
+  .main-nav {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    margin-bottom: 1em;
+    min-height: initial;
+    max-height: initial;
+    overflow-y: auto;
+  }
+  main .content {
+    max-height: initial;
+  }
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  min-width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  background-color: #FFF;
+}
+main > .content {
+  padding: 10px;
+}
+main a {
+  color: #21671E;
+}
+main a:hover {
+  color: #BDE9BE;
+}
+main section {
+  padding-bottom: 10px;
+}
+main section > heading {
+  position: relative;
+  top: 8px;
+  left: 30px;
+  display: inline-block;
+  background: #FFF;
+  padding: 0 20px 0 15px;
+  font-weight: bold;
+}
+nav a {
+  text-decoration: none;
+}
+.main-nav {
+  background-color: #666;
+}
+.main-nav li.active {
+  background: -moz-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(124, 124, 124, 0.7)), color-stop(50%, rgba(196, 196, 196, 0.5)), color-stop(100%, rgba(124, 124, 124, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(124, 124, 124, 0.7) 0%, rgba(196, 196, 196, 0.5) 50%, rgba(124, 124, 124, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b37c7c7c', endColorstr='#b37c7c7c', GradientType=0);
+}
+.main-nav a {
+  font-weight: bold;
+  color: #FFF;
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+.brand {
+  background-color: #000;
+  color: #FFF;
+  padding: .6em;
+}
+.brand img,
+.brand nav li {
+  display: inline-block;
+}
+.brand nav {
+  float: right;
+  padding-top: .3em;
+  padding-right: 15px;
+}
+.brand nav a {
+  color: #FFF;
+  font-size: 11px;
+  font-weight: bold;
+}
+section > .sales,
+section > .news {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: 1px #BBB solid;
+  padding: 15px;
+}
+.sales,
+.news {
+  font-size: 13px;
+}
+.sales article,
+.news article {
+  padding-bottom: 15px;
+}
+table.sales {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+table.sales th {
+  background-color: #BDE9BE;
+  text-align: left;
+}
+table.sales td,
+table.sales th {
+  margin: 0;
+  overflow: visible;
+  padding: 0.4em 1em;
+}
+table.sales td:first-child,
+table.sales th:first-child {
+  border-left-width: 0;
+}
+table.sales td {
+  background-color: transparent;
+  text-align: right;
+}
+table.sales td:first-child {
+  text-align: left;
+}
+table.sales tr:nth-child(2n-1) td {
+  background-color: #E3F6E2;
+}
+.copyright {
+  color: #FFF;
+  padding: 10px;
+  font-size: 11px;
+}
+.collapsed heading,
+.expanded heading {
+  cursor: pointer;
+}
+.expanded heading:before {
+  content: "\2013";
+  padding-right: 10px;
+}
+.collapsed .content {
+  display: none;
+}
+.collapsed heading:before {
+  content: "+";
+  padding-right: 10px;
+}
+/* Include this file in your html if you are using the CSP mode. */
+@charset "UTF-8";
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+ng\:form {
+  display: block;
+}
+.ng-animate-block-transitions {
+  transition: 0s all!important;
+  -webkit-transition: 0s all!important;
+}
+/* show the element during a show/hide animation when the
+ * animation is ongoing, but the .ng-hide class is active */
+.ng-hide-add-active,
+.ng-hide-remove {
+  display: block!important;
+}
