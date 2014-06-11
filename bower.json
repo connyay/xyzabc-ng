@@ -1,19 +1,20 @@
 {
-    "name": "xyzabc-ng",
-    "main": "app.js",
-    "version": "0.0.1",
-    "authors": [
-        "connyay <conn.hindley@gmail.com>"
-    ],
-    "license": "MIT",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "devDependencies": {
-        "angular": "~1.2.14",
-        "angular-route": "~1.2.14"
-    }
+  "name": "xyzabc-ng",
+  "main": "app.js",
+  "version": "0.0.1",
+  "authors": [
+    "connyay <conn.hindley@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14",
+    "angular-charts": "~0.2.1"
+  }
 }

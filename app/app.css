@@ -311,6 +311,11 @@ table.sales td:first-child {
 table.sales tr:nth-child(2n-1) td {
   background-color: #E3F6E2;
 }
+.chart {
+  padding-top: 20px;
+  height: 300px;
+  width: 1900px;
+}
 .copyright {
   color: #FFF;
   padding: 10px;

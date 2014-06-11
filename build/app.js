@@ -91,7 +91,7 @@
 (function() {
     'use strict';
 
-    angular.module('xyzabc-ng-main', ['ngRoute', 'xyzabc-ng-data', 'newsListDirective', 'salesTableDirective'])
+    angular.module('xyzabc-ng-main', ['ngRoute', 'xyzabc-ng-data', 'newsListDirective', 'salesTableDirective', 'angularCharts'])
         .config(function($routeProvider) {
             $routeProvider
                 .when('/dashboard', {
@@ -167,12 +167,36 @@
         ])
         .controller('SalesCtrl', ['$scope', 'Data',
             function($scope, $data) {
+                var formatData = function(data) {
+                    $scope.data = {
+                        series: ['MTD Sales', 'MTD Revenue', 'YTD Sales', 'YTD Revenue']
+                    };
+
+                    $scope.data.data = data.map(function(x) {
+                        return {
+                            x: x.Product,
+                            y: [x["Month-to-Date Sales"], x["Month-to-Date Revenue"].replace('$', ''), x["Year-to-Date Sales"], x["Year-to-Date Revenue"].replace('$', '')]
+                        };
+                    });
+
+                    $scope.chartType = 'bar';
+                };
+
                 $data.getSales().then(function(sales) {
                     $scope.sales = sales;
                     if (sales.length) {
                         $scope.keys = Object.keys(sales[0]);
                     }
+                    formatData(sales);
                 });
+
+                $scope.config = {
+                    labels: true,
+                    legend: {
+                        display: true,
+                        position: 'right'
+                    }
+                };
             }
         ]);
 
