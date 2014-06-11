@@ -5,4 +5,4 @@ $templateCache.put("main/dashboard.html","<h1 class=\"bold\">Dashboard</h1>\r\n\
 $templateCache.put("main/news.html","<h1 class=\"bold\">News</h1>\r\n\r\n<news-list></news-list>");
 $templateCache.put("main/page.html","<h1 class=\"bold\">{{title}}</h1>");
 $templateCache.put("main/sales.html","<h1 class=\"bold\">Sales</h1>\r\n\r\n<sales-table sales=\"sales\" keys=\"keys\"></sales-table>\r\n\r\n<div ac-chart=\"chartType\" ac-data=\"data\" ac-config=\"config\" id=\'chart\' class=\'chart\'></div>\r\n");
-$templateCache.put("components/nav/side-nav.html","<nav class=\"main-nav\">\r\n	<ul>\r\n		<li ng-repeat=\"item in navItems\" ng-class=\"{active:isActive(\'/{{item.route}}\')}\">\r\n			<a href=\"#{{item.route}}\" title=\"{{item.title}}\">{{item.title}}</a>\r\n		</li>\r\n	</ul>\r\n</nav>");}]);
+$templateCache.put("components/nav/side-nav.html","<nav class=\"main-nav\">\r\n	<ul>\r\n		<li ng-repeat=\"item in navItems\" ng-class=\"{active:isActive(\'/{{item.route}}\')}\">\r\n			<a href=\"#{{item.route || item.title | lowercase}}\" title=\"{{item.title}}\">{{item.title}}</a>\r\n		</li>\r\n	</ul>\r\n</nav>");}]);

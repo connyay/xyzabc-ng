@@ -1,7 +1,7 @@
 <nav class="main-nav">
 	<ul>
 		<li ng-repeat="item in navItems" ng-class="{active:isActive('/{{item.route}}')}">
-			<a href="#{{item.route}}" title="{{item.title}}">{{item.title}}</a>
+			<a href="#{{item.route || item.title | lowercase}}" title="{{item.title}}">{{item.title}}</a>
 		</li>
 	</ul>
 </nav>
